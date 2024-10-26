@@ -64,7 +64,7 @@ git branch new-branch-name source-branch-name   --as branches are always created
 
 -- commit message - If applied to codebased this commit wil ________?
 git push --set-upstream origin feature-branch alternatively one can also use the below command
-git push -u feature-branch
+git push -u origin feature-branch
 
 git push - to push your changes
 git pull - anyone can pull changes
