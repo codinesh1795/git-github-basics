@@ -1,0 +1,45 @@
+git is distributed control system
+
+git --version
+
+git config --global user.name 'Dinesh'
+git config --global user.email '---@gmail.com'
+
+Create a new repository
+git init  -- pervious time commonly chosen name for branch is master now its main
+git config --global init.defaultBranch main/master
+ 
+
+ //Create your main folder cd to folder and run
+ git init
+ //main is the default branch, there can be multiple parallel development branches
+
+create a new file - hello.js
+create file - readme.md
+
+run- git status
+
+if there are untracked files present use "git add filename" to track
+
+git commit -m 'Add filename'
+
+How to commit and add all files to track
+
+git add ./
+git commit -m 'adds all files to track'
+
+How to see history of all commits?
+git log
+
+How to switch to old stable version if latest breaks
+git checkout 'branch commit hash value'
+
+//  causes detached head warning as head no longer points to latest commit instead to older version
+How to restore back to main?
+git checkout main
+
+git checkout -f main
+
+git is a tool to track chnages and github is online cloud that stores git repository
+
+git init - local repository, in github - remote repository
