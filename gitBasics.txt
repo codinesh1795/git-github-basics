@@ -89,3 +89,26 @@ example
 
 git branch dev-Dinesh
 git checkout -b dev-din2
+
+// go to a back commit and delete all further commits but want to keep those changes
+git reset --soft commit-hash   --changes kept in staging-working directory
+git reset commit-hash  - changes kept in working directory, but not in staging area
+git reset --hard commit-hash --
+
+// If you push a change that breaks production, you want to go back but keep all chnages history intact
+git revert commit-hash
+git add ./    -- add to staging
+git revert --continue 
+
+// you are working on one thing, some bugs come-manager wants you to work on that instead
+// git stash helps us to save both staged and unstaged changes
+git stash  --
+-- now work on the fix and once fix is ready do
+git add./
+git commit -m 'bug fix'
+git push
+-- now come back to what you were working before bug fix
+git stash list   -- to see all names in stash list
+git stash apply stash@{id}   --id is numeric 0,1,2,etc
+
+learn to use GIT GUI-efficient, need for remembering commands is limited
