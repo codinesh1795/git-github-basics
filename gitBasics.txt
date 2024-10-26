@@ -42,4 +42,30 @@ git checkout -f main
 
 git is a tool to track chnages and github is online cloud that stores git repository
 
-git init - local repository, in github - remote repository
+git init - local repository- changes are private until we pusg to remote repository
+github, gitlabs,bitbucket  - remote repository
+
+git branch -M main --switch to main branch
+git remote add origin https://github.com/codinesh1795/git-github-basics.git  -- add remote repo, origin is keyword for main branch in github
+
+git remote add somename newurl -- adding multiple repo
+
+git push -u origin main -- push changes to remote repo
+
+--braches allow us to create different versions of your project, the changes in branched version do not affect main branch until you decide to 
+--merge them into the main branch. Different branches can be used to develop seprate features, bug fixes
+
+git branch branch-name -- create a new branch
+git checkout branch-name  -- switch to a new branch
+git checkout main --switch to main branch
+git checkout -b feature-branch   --create and switch to new branch in single command
+git branch new-branch-name source-branch-name   --as branches are always created from the branch we are currently in, ensure from which branch 
+                                                you want to create new branch
+
+-- commit message - If applied to codebased this commit wil ________?
+git push --set-upstream origin feature-branch alternatively one can also use the below command
+git push -u feature-branch
+
+git push - to push your changes
+git pull - anyone can pull changes
+
